@@ -1,7 +1,7 @@
-package Strategy.Search;
+package Backend.Strategy.Search;
 
-import Builder.Book;
-import Support.AdvancedSearchParameters;
+import Backend.Builder.Book;
+import Backend.Utils.AdvancedSearchParameters;
 
 import java.util.List;
 

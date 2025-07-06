@@ -1,4 +1,4 @@
-package Support;
+package Backend.Utils;
 
 public record AdvancedSearchParameters( String title,
                                         String author,

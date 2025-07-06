@@ -1,4 +1,4 @@
-package Observer;
+package Backend.Observer;
 
 import java.util.LinkedList;
 import java.util.List;

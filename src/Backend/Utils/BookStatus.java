@@ -1,4 +1,4 @@
-package Support;
+package Backend.Utils;
 
 public enum BookStatus {
     TO_READ("Da Leggere"),

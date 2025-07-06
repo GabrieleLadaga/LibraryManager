@@ -1,27 +1,26 @@
-package Strategy.Sort;
+package Backend.Strategy.Sort;
 
-import Builder.Book;
+import Backend.Builder.Book;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-public class SortByStatus implements SortStrategy {
+public class SortByGenre implements SortStrategy {
 
     @Override
     public List<Book> sort(List<Book> books) {
         List<Book> sortedBook = new ArrayList<>( books );
-        sortedBook.sort( new StatusComparator() );
+        sortedBook.sort( new GenreComparator() );
         return sortedBook;
     }
 
-    static class StatusComparator implements Comparator<Book> {
+    static class GenreComparator implements Comparator<Book> {
 
         @Override
         public int compare(Book book1, Book book2) {
-            return book1.getStatus().compareTo(book2.getStatus());
+            return book1.getTitle().compareTo(book2.getTitle());
         }
 
     }
-
 }

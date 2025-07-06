@@ -1,6 +1,6 @@
-package Builder;
+package Backend.Builder;
 
-import Support.BookStatus;
+import Backend.Utils.BookStatus;
 
 public class Book {
     private final String title;
@@ -22,7 +22,7 @@ public class Book {
     public BookStatus getStatus() { return status; }
     public Integer getRating() { return rating; }
 
-    static class Builder {
+    public static class Builder {
         //Required Parameters
         private final String title;
         private final String author;
