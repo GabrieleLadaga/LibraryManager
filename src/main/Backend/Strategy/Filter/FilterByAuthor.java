@@ -1,0 +1,21 @@
+package main.Backend.Strategy.Filter;
+
+import main.Backend.Builder.Book;
+
+import java.util.LinkedList;
+import java.util.List;
+
+public class FilterByAuthor implements FilterStrategy {
+
+    @Override
+    public List<Book> filter(List<Book> books, String value) {
+        List<Book> filteredBooks = new LinkedList<>();
+        for ( Book book : books ) {
+            if ( book.getAuthor().equalsIgnoreCase(value) ) {
+                filteredBooks.add(book);
+            }
+        }
+        return filteredBooks;
+    }
+
+}
