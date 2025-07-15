@@ -301,7 +301,7 @@ public class LibraryGUI implements LibraryObserver {
                 try {
                     status = BookStatus.valueOf( statusFiled.getText().toUpperCase() );
                 }catch(IllegalArgumentException exception){
-                    JOptionPane.showMessageDialog(addDialog, "Invalid status! Use: 'Da Leggere', 'In Lettura' or 'Letto'", "Error", JOptionPane.ERROR_MESSAGE );
+                    JOptionPane.showMessageDialog(addDialog, "Invalid status! Use: 'Da_Leggere', 'In_Lettura' or 'Letto'", "Error", JOptionPane.ERROR_MESSAGE );
                     return;
                 }
             }
@@ -526,7 +526,7 @@ public class LibraryGUI implements LibraryObserver {
                 try {
                     bookBuilder.status( BookStatus.valueOf( statusFiled.getText().toUpperCase() ) );
                 }catch(IllegalArgumentException exception){
-                    JOptionPane.showMessageDialog(modifyDialog, "Invalid status! Use: 'Da Leggere', 'In Lettura' or 'Letto'", "Error", JOptionPane.ERROR_MESSAGE );
+                    JOptionPane.showMessageDialog(modifyDialog, "Invalid status! Use: 'Da_Leggere', 'In_Lettura' or 'Letto'", "Error", JOptionPane.ERROR_MESSAGE );
                     return;
                 }
             }
